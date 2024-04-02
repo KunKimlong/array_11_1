@@ -7,6 +7,7 @@ int main(){
 		printf("1. Input \n");
 		printf("2. Output \n");
 		printf("3. Sum \n");
+		printf("4. Maximum \n");
 		printf("Enter option: ");scanf("%d",&op);
 		switch(op){
 			case 1:{
@@ -34,6 +35,18 @@ int main(){
 				printf("Sum of Array = %d\n",sum);
 				break;
 			}
+			case 4:{
+				printf("------ maximum -------\n");
+				int max = arr[0];
+				for(i=0;i<n;i++){
+					if(max<arr[i]){
+						max = arr[i];
+					}
+				}
+				printf("Maximum is: %d \n",max);
+				break;
+			}
+			
 		}
 	}while(1);
 	return 0;
